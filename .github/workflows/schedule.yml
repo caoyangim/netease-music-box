@@ -4,7 +4,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "50 5 * * *"
 
 jobs:
   update-gist:
@@ -16,6 +16,6 @@ jobs:
         uses: ./
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: 2f482c88c7d16b8a293553a4ddf2cb52
-          USER_ID: 322486489
+          GIST_ID: e2cdb627b2a82348bf6c441f80190a16
+          USER_ID: 256945026
           USER_TOKEN: ${{ secrets.USER_TOKEN }}
